@@ -13,5 +13,6 @@
         </Grid.RowDefinitions>
         <Label Name="userName"></Label>
         <Image Grid.Row="1" Name="SentImage"></Image>
+        <Button Content="Open" HorizontalAlignment="Right" Width="150" Click="Button_Click"></Button>
     </Grid>
 </Window>

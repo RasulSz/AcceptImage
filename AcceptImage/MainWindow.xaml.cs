@@ -25,6 +25,11 @@ namespace AcceptImage
         public MainWindow()
         {
             InitializeComponent();
+            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
             var ipAddress = IPAddress.Parse("192.168.31.90");
             var port = 80;
 
@@ -33,7 +38,7 @@ namespace AcceptImage
                 var ep = new IPEndPoint(ipAddress, port);
                 socket.Bind(ep);
                 socket.Listen(10);
-               
+
 
                 while (true)
                 {
@@ -54,7 +59,6 @@ namespace AcceptImage
                     });
                 }
             }
-
         }
     }
 }
